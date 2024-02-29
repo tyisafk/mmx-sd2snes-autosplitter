@@ -1,0 +1,277 @@
+{
+  "name": "Mega Man X",
+  "autostart": {
+    "active": "1",
+    "address": "0x02",
+    "value": "0xA6",
+    "type": "eq",
+    "more": [
+      {
+        "address": "0x0A8",
+        "value": "0x10",
+        "type": "eq"
+      }
+    ]
+  },
+  
+  
+  "definitions": [
+    {
+     "name": "Intro",
+	 "address": "0x01F9B",
+	 "value": "0x0",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x0C32",
+	   "value": "0x30",
+       "type": "eq"
+	  }
+	  ]
+	},
+	
+	{
+     "name": "Chill Penguin Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x08",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+	
+	{
+     "name": "Boomer Kuwanger Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x07",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+	
+	{
+     "name": "Sting Chameleon Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x02",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Storm Eagle Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x05",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Flame Mammoth Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x04",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Spark Mandrill Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x06",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Armored Armadillo Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x03",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Launch Octopus Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x01",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Chill HP Grab",
+	 "address": "0x01F9C",
+	 "value": "0x01",
+	 "type": "bit"
+	},
+
+	{
+     "name": "Hadouken Obtain",
+	 "address": "0x017FE",
+	 "value": "0x85",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+       "type": "eq"
+	   }
+	    ]
+	},
+
+	{
+     "name": "Sigma 1 Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x09",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Sigma 2 Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x0A",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Sigma 3 Helmet Ding",
+	 "address": "0x01F7A",
+	 "value": "0x0B",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x0BBC",
+	   "value": "0xCB",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Wolf Sigma Defeat",
+	 "address": "0x01F7A",
+	 "value": "0x0C",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x0E69",
+	   "value": "0x12",
+       "type": "eq"
+	   }
+	    ]
+	}
+	]
+}
