@@ -211,7 +211,7 @@
      "more": [
 	  {
 	   "address": "0x01F81",
-	   "value": "0x02",
+	   "value": "0x04",
        "type": "eq"
 	   },
 	  {
@@ -230,7 +230,7 @@
      "more": [
 	  {
 	   "address": "0x01F81",
-	   "value": "0x02",
+	   "value": "0x03",
        "type": "eq"
 	   },
 	  {
@@ -249,7 +249,7 @@
      "more": [
 	  {
 	   "address": "0x01F81",
-	   "value": "0x02",
+	   "value": "0x05",
        "type": "eq"
 	   },
 	  {
