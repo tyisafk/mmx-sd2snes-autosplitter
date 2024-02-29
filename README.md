@@ -110,7 +110,7 @@ This splits at the exact moment Wolf Sigma is defeated for the final split.
 	 "type": "eq",
      "more": [
 	  {
-	   "address": "0x0E69",  // Honestly have no idea how I came about this and what exactly it does.  All I know is according to the MMX RAM map, this is the area where enemy data is handled.
+	   "address": "0x0E69",  // Honestly have no idea how I came about this and what exactly it does.
 	   "value": "0x12",      // That address changes to this value at the exact moment Wolf Sigma is defeated, and only becomes this value at that point in the stage, so it works.
        "type": "eq"
 	   }
