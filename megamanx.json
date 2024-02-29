@@ -29,9 +29,28 @@
 	  }
 	  ]
 	},
+
+	{
+     "name": "Chill Penguin Stage",
+	 "address": "0x01F7A",
+	 "value": "0x08",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
 	
 	{
-     "name": "Chill Penguin Helmet Ding",
+     "name": "Chill Penguin Boss",
 	 "address": "0x01F7A",
 	 "value": "0x08",
 	 "type": "eq",
@@ -48,9 +67,28 @@
 	  }
 	   ]
 	},
-	
+
 	{
-     "name": "Boomer Kuwanger Helmet Ding",
+     "name": "Boomer Kuwanger Stage",
+	 "address": "0x01F7A",
+	 "value": "0x07",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Boomer Kuwanger Boss",
 	 "address": "0x01F7A",
 	 "value": "0x07",
 	 "type": "eq",
@@ -67,9 +105,28 @@
 	  }
 	   ]
 	},
-	
+
 	{
-     "name": "Sting Chameleon Helmet Ding",
+     "name": "Sting Chameleon Stage",
+	 "address": "0x01F7A",
+	 "value": "0x02",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Sting Chameleon Boss",
 	 "address": "0x01F7A",
 	 "value": "0x02",
 	 "type": "eq",
@@ -88,7 +145,21 @@
 	},
 
 	{
-     "name": "Storm Eagle Helmet Ding",
+     "name": "Storm Eagle Stage",
+	 "address": "0x01F7A",
+	 "value": "0x08",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   }
+	    ]
+	},
+
+	{
+     "name": "Storm Eagle Boss",
 	 "address": "0x01F7A",
 	 "value": "0x05",
 	 "type": "eq",
@@ -107,7 +178,26 @@
 	},
 
 	{
-     "name": "Flame Mammoth Helmet Ding",
+     "name": "Flame Mammoth Stage",
+	 "address": "0x01F7A",
+	 "value": "0x04",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Flame Mammoth Boss",
 	 "address": "0x01F7A",
 	 "value": "0x04",
 	 "type": "eq",
@@ -126,7 +216,26 @@
 	},
 
 	{
-     "name": "Spark Mandrill Helmet Ding",
+     "name": "Spark Mandrill Stage",
+	 "address": "0x01F7A",
+	 "value": "0x06",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Spark Mandrill Boss",
 	 "address": "0x01F7A",
 	 "value": "0x06",
 	 "type": "eq",
@@ -145,7 +254,26 @@
 	},
 
 	{
-     "name": "Armored Armadillo Helmet Ding",
+     "name": "Armored Armadillo Stage",
+	 "address": "0x01F7A",
+	 "value": "0x03",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Armored Armadillo Boss",
 	 "address": "0x01F7A",
 	 "value": "0x03",
 	 "type": "eq",
@@ -164,7 +292,26 @@
 	},
 
 	{
-     "name": "Launch Octopus Helmet Ding",
+     "name": "Launch Octopus Stage",
+	 "address": "0x01F7A",
+	 "value": "0x01",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x02",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Launch Octopus Boss",
 	 "address": "0x01F7A",
 	 "value": "0x01",
 	 "type": "eq",
@@ -183,14 +330,14 @@
 	},
 
 	{
-     "name": "Chill HP Grab",
+     "name": "Chill HP",
 	 "address": "0x01F9C",
 	 "value": "0x01",
 	 "type": "bit"
 	},
 
 	{
-     "name": "Hadouken Obtain",
+     "name": "Hadouken",
 	 "address": "0x017FE",
 	 "value": "0x85",
 	 "type": "eq",
@@ -204,7 +351,26 @@
 	},
 
 	{
-     "name": "Sigma 1 Helmet Ding",
+     "name": "Sigma 1",
+	 "address": "0x01F7A",
+	 "value": "0x09",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x04",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Bospider",
 	 "address": "0x01F7A",
 	 "value": "0x09",
 	 "type": "eq",
@@ -223,7 +389,26 @@
 	},
 
 	{
-     "name": "Sigma 2 Helmet Ding",
+     "name": "Sigma 2",
+	 "address": "0x01F7A",
+	 "value": "0x0A",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x03",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "Rangda Bangda",
 	 "address": "0x01F7A",
 	 "value": "0x0A",
 	 "type": "eq",
@@ -242,7 +427,26 @@
 	},
 
 	{
-     "name": "Sigma 3 Helmet Ding",
+     "name": "Sigma 3",
+	 "address": "0x01F7A",
+	 "value": "0x0B",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",
+	   "value": "0x05",
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",
+	   "value": "0x63",
+	   "type": "eq"
+	  }
+	   ]
+	},
+
+	{
+     "name": "D-Rex",
 	 "address": "0x01F7A",
 	 "value": "0x0B",
 	 "type": "eq",
@@ -261,7 +465,7 @@
 	},
 
 	{
-     "name": "Wolf Sigma Defeat",
+     "name": "Wolf Sigma",
 	 "address": "0x01F7A",
 	 "value": "0x0C",
 	 "type": "eq",
