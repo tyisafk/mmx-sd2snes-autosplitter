@@ -47,23 +47,47 @@ Splits at the moment X is grabbed by Vile during the intro stage.
 	},
 ```
 
-## Mavericks and Sigma 1-3
-Splits when helmet dings after completing a stage.
+## Boss Doors (Excluding Storm Eagle)
+Splits at the moment you touch the door before entering a boss room.
+
+Storm Eagle in speedruns don't use the door, but X's checkpoint updates the moment you touch the rising platform, so the door check isn't needed.
 ```
-{
-     "name": "Chill Penguin Helmet Ding",
-	 "address": "0x01F7A",      // Address points to what stage X is at.
-	 "value": "0x08",           // Stage Value (This case, 0x08 is Chill Penguin's stage)
+     "name": "Chill Penguin Stage",
+	 "address": "0x01F7A",	    // Address points to what stage X is at.
+	 "value": "0x08",	    // Stage Value (In this case, 0x08 is Chill Penguin's stage)
 	 "type": "eq",
      "more": [
 	  {
-	   "address": "0x01F81",    // Checkpoint on stage (This is to prevent Armor Part Capsules from splitting)
-	   "value": "0x02",         // Farthest checkpoint (Right by boss door usually)
+	   "address": "0x01F81",    // Checkpoint on stage (Adding this check is to prevent Armor Part Capsules from splitting prematurely)
+	   "value": "0x02",	    // Farthest checkpoint (Updates after entering the pre-boss room)
+       "type": "eq"
+	   },
+	  {
+	   "address": "0x01F",	    // This value consistently switches to 0x63 when doors are touched.
+	   "value": "0x63",	    // X touches door.
+	   "type": "eq"
+	  }
+	   ]
+	},
+```
+
+## Mavericks and Sigma 1-3
+Splits when helmet dings after completing a stage.  Works basically the same as boss door
+```
+{
+     "name": "Chill Penguin Boss",
+	 "address": "0x01F7A",
+	 "value": "0x08",
+	 "type": "eq",
+     "more": [
+	  {
+	   "address": "0x01F81",    // Again, checkpoint check is used to avoid capsule from splitting.
+	   "value": "0x02",
        "type": "eq"
 	   },
 	  {
 	   "address": "0x0BBC",     // I think this is related to X's status or pose.
-	   "value": "0xCB",         // The exact moment the ding sound plays.
+	   "value": "0xCB",         // The exact moment the helmet ding sound plays after sprite change, used when Armor Part is obtained or boss is defeated.
 	   "type": "eq"
 	  }
 	   ]
@@ -75,7 +99,7 @@ Splits the moment the HP tank is obtained.
 ```
 {
      "name": "Chill HP Grab",
-	 "address": "0x01F9C",      // All HP tanks share a byte with each bit dedicated to each tank.  0000 0001 belongs to Chill Penguin.
+	 "address": "0x01F9C",      // All HP tanks share a byte with each bit dedicated to each tank.  "0000 0001" in this byte belongs to Chill Penguin HP.
 	 "value": "0x01",           // This is that bit.  (I assume I did this correctly.  It splits properly on pick up so not complaining)
 	 "type": "bit"
 	},
@@ -87,7 +111,7 @@ Splits on helmet ding after getting Hadouken.
 ```
 {
      "name": "Hadouken Obtain",
-	 "address": "0x017FE",        // This address shows how many times the capsule area has been visited.  Once you get Hadouken, this value becomes 0x85
+	 "address": "0x017FE",        // The value at this address increments by 1 each capsule area visit starting from 0x00 on a new playthrough.  Once you get Hadouken, this value becomes 0x85
 	 "value": "0x85",
 	 "type": "eq",
      "more": [
@@ -110,8 +134,8 @@ This splits at the exact moment Wolf Sigma is defeated for the final split.
 	 "type": "eq",
      "more": [
 	  {
-	   "address": "0x0E69",  // Honestly have no idea how I came about this and what exactly it does.
-	   "value": "0x12",      // That address changes to this value at the exact moment Wolf Sigma is defeated, and only becomes this value at that point in the stage, so it works.
+	   "address": "0x0E69",  // Honestly, I have no idea what this address does, but it seems to be related to enemies.  While this works fine from testing, if anyone has a better address for this, let me know!
+	   "value": "0x12",      // That address changes to this value at the exact moment Wolf Sigma is defeated, and only becomes this value at that point in the stage, which is why it works.
        "type": "eq"
 	   }
 	    ]
