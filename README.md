@@ -10,7 +10,7 @@ You'll need to have the component for Livesplit installed [HERE](https://github.
 json files don't allow comments, so here's a breakdown of what these do.
 
 ## Autostart
-This automatically starts your timer when the conditions match.  If you want to manually start the timer, you could either delete this section or change Active to 0 (Recommended so you don't accidentally mess up the syntax).
+This automatically starts your timer when the conditions match.  If you want to manually start the timer, change "active" from 1 to 0.
 ```
 {
   "name": "Mega Man X",
